@@ -3,8 +3,10 @@ package com.example.helloworldapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +33,21 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((TextView) findViewById(R.id.textView)).setText("Android is Awesome");
+                String new_text = ((EditText) findViewById(R.id.editText)).getText().toString();
+                if (TextUtils.isEmpty(new_text)) {
+                    ((TextView) findViewById(R.id.textView)).setText("Hello from Ha");
+                } else {
+                    ((TextView) findViewById(R.id.textView)).setText(new_text);
+                }
+            }
+        });
+
+        findViewById(R.id.rootView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((TextView) findViewById(R.id.textView)).setTextColor(getResources().getColor(R.color.colorAccent));
+                findViewById(R.id.rootView).setBackgroundColor(getResources().getColor(R.color.originText));
+                ((TextView) findViewById(R.id.textView)).setText("Hello From Ha");
             }
         });
     }
