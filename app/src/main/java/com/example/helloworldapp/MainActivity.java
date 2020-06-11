@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.rootView).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((TextView) findViewById(R.id.textView)).setTextColor(getResources().getColor(R.color.colorAccent));
-                findViewById(R.id.rootView).setBackgroundColor(getResources().getColor(R.color.originText));
-                ((TextView) findViewById(R.id.textView)).setText("Hello From Ha");
+                ((TextView) findViewById(R.id.textView)).setTextColor(getResources().getColor(R.color.originText));
+                findViewById(R.id.rootView).setBackgroundColor(getResources().getColor(R.color.colorAccent));
+                ((TextView) findViewById(R.id.textView)).setText("Hello from Ha");
             }
         });
     }

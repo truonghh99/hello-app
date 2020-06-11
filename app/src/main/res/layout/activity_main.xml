@@ -15,8 +15,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="111dp" />
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="51dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -25,10 +25,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="295dp"
-        android:layout_marginEnd="113dp"
-        android:text="Hello From Ha!!!"
-        android:textColor="#E91E63"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="124dp"
+        android:text="Hello from Ha"
+        android:textColor="@color/originText"
         android:textSize="24sp" />
 
     <Button
@@ -55,6 +55,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="166dp"
+        android:layout_marginBottom="175dp"
         android:text="Change Text " />
 </RelativeLayout>
